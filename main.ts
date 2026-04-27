@@ -1,5 +1,4 @@
 input.onButtonPressed(Button.A, function () {
-    cuteBot.forward()
     basic.showLeds(`
         . # . # .
         # # # # #
@@ -7,12 +6,13 @@ input.onButtonPressed(Button.A, function () {
         . # . # .
         # # # # #
         `)
+    cuteBot.forward()
     basic.pause(2000)
     cuteBot.stopcar()
 })
 input.onButtonPressed(Button.B, function () {
-    cuteBot.backforward()
     basic.showString("pedro!")
+    cuteBot.backforward()
     basic.pause(2000)
     cuteBot.stopcar()
 })
